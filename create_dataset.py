@@ -7,9 +7,10 @@ from random import randrange
 import csv
 
 fake = Faker()
+#Set the dataset fields
 csv_columns = ['name','country','age','disable','outdoor','hobbies',]
 
-#custom provider
+#custom provider for problem specific needs - Hobby
 class HobbyProvider(BaseProvider):
     def hobby(self):
         hobbies = ['Writing', 'Blogging', 'Gardening', 'Craft', 'Cooking', 'Outdoor Activities', 'Volunteering']
@@ -18,6 +19,7 @@ class HobbyProvider(BaseProvider):
         return hobby_string
 fake.add_provider(HobbyProvider)
 
+#custom provider for problem specific needs - Age
 class AgeProvider(BaseProvider):
     def age(self):
         age = randrange(12,90)
