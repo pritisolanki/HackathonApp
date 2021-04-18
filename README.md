@@ -1,7 +1,3 @@
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
 ## WorldHackathon Day Apr 2021
 This repository is setup for all the challenge hackathon artifacts.
 
