@@ -1,7 +1,8 @@
-## WorldHackathon Day Apr 2021
-This repository is setup for all the challenge hackathon artifacts.
 
-## Structure
+## WorldHackathon Day Apr 2021
+This repository is setup for all the project artifacts created by team during challenge.
+
+## How this repository is setup
 
 ### appcodebase 
     This folder contains a bare minimum working app for iConnect
@@ -12,7 +13,9 @@ This repository is setup for all the challenge hackathon artifacts.
 ### projectartifacts
     This folder contains all artifacts developed during team collaboration.
     
-## Contributing Team
+## Team Apollo 
+### Building resilience communties through act of seelf-awareness and kindness
+
 Design Members (UI/UX) -  Neeti Sharma <br/>
 
 Subject Matter Experts (SMEs) - Mari Takashima <br/>
