@@ -10,7 +10,7 @@ Bushfires and floods are the top two natural disasters in Australia. Geographica
 Minderoo foundation (link), a modern philanthropic organisation, aims to build resilience to fires and floods by harnessing the collective power of the communities, industry, and government. We support Noble Minderoo Mission anddevelop ideas that will help build resilient communities through self-awareness and acts of kindness. The organisation is reaching out to the leaders of the communities to build a resilient community (top-down approach). We aim to build awareness and contribution at the individual level to build community resilience (bottom-up).  We are providing an app where each and everyone can register and prepare themselves for disaster and actively give them 
 recommendations of acts of kindness they can do at their pace to build Resilient Communities. The power of individuals is immeasurable. For example, a nine-year-old girl started actions to ban plastic straws in her community, and now it has influenced major franchise like Starbucks to use a paper straw instead (link). Both top-down and bottom-up approach will need to be used for effective implementation to build community resilience. 
 
-## Hackathon Highlight
+## Hackathon Solution Highlight
 ### Recommendation system (Machine Learning)
 ### Pre-processing
 We use ColumnTransformer from scikit-learn where MinMaxScaler is used to normalize each data point. Majority of variables have values 0/1 which makes it a sparse dataset. Two-third of the dataset is split into training and one-third is used for evaluating the model. For deployment all the data is used for model training.
