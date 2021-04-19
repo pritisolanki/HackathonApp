@@ -1,5 +1,5 @@
 
-## WorldHackathon Day Apr 2021
+##  WorldInnovationDayHack 2021 Apr 2021
 This repository is setup for all the project artifacts created by team during challenge.
 
 ## How this repository is setup
@@ -14,6 +14,7 @@ This repository is setup for all the project artifacts created by team during ch
     This folder contains all artifacts developed during team collaboration.
     
 ## Team Apollo 
+### Challenge Category : Health and Wellbeing
 ### Building resilience communties through act of self-awareness and kindness
 
 Design Members (UI/UX) -  Neeti Sharma <br/>
