@@ -1,0 +1,550 @@
+.mediaViewInfo {
+    --web-view-name: Signin;
+    --web-view-id: Signin;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: Signin;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#Signin {
+    position: absolute;
+    width: 3Trailing_icon60px;
+    height: 760px !important;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    --web-view-name: Signin;
+    --web-view-id: Signin;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#link_m {
+    position: absolute;
+    width: 49.947px;
+    height: 49.954px;
+    left: 155.525px;
+    top: 97.523px;
+    overflow: visible;
+}
+
+#Group_398_m {
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 16.058px;
+    overflow: visible;
+}
+
+#Group_397_m {
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Path_97_m {
+    fill: rgba(112, 239, 222, 1);
+}
+
+.Path_97_m {
+    overflow: visible;
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Group_400_m {
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 18.482px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Group_399_m {
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Path_98_m {
+    fill: rgba(14, 117, 121, 1);
+}
+
+.Path_98_m {
+    overflow: visible;
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#Light__Text_fields2_Outlined_6 {
+    position: absolute;
+    width: 290px;
+    height: 65px;
+    left: 35px;
+    top: 257px;
+    overflow: visible;
+}
+
+#_Container_l_Color_le {
+    fill: transparent;
+    stroke: rgba(3, 218, 197, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+
+._Container_l_Color_le {
+    position: absolute;
+    overflow: visible;
+    width: 290px;
+    height: 56px;
+    left: 0px;
+    top: 9px;
+}
+
+#Top_label {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 13.5px;
+    top: 0px;
+    overflow: visible;
+}
+
+#top_border_with_background_col {
+    fill: rgba(245, 245, 245, 1);
+    width: 70vw
+}
+
+.top_border_with_background_col {
+    position: absolute;
+    overflow: visible;
+    width: 38px;
+    height: 4px;
+    left: 0px;
+    top: 7px;
+}
+
+#_Label_lh {
+    left: 3px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 32px;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: -2px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(18, 18, 18, 1);
+    letter-spacing: 0.3333333206176758px;
+}
+
+#Light__Text_fields2_Outlined_6_li {
+    position: absolute;
+    width: 290px;
+    height: 65px;
+    left: 35px;
+    top: 346px;
+    overflow: visible;
+}
+
+#_Container_l_Color_lj {
+    fill: transparent;
+    stroke: rgba(3, 218, 197, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+
+._Container_l_Color_lj {
+    position: absolute;
+    overflow: visible;
+    width: 290px;
+    height: 56px;
+    left: 0px;
+    top: 9px;
+}
+
+#Top_label_lk {
+    position: absolute;
+    width: 63px;
+    height: 16px;
+    left: 13.5px;
+    top: 0px;
+    overflow: visible;
+}
+
+#top_border_with_background_col_ll {
+    fill: rgba(245, 245, 245, 1);
+    width: 70vw
+}
+
+.top_border_with_background_col_ll {
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    height: 4px;
+    left: 0px;
+    top: 7px;
+}
+
+#_Label_lm {
+    left: 3px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 57px;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: -2px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(18, 18, 18, 1);
+    letter-spacing: 0.3333333206176758px;
+}
+
+#Trailing_icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 240px;
+    top: 8px;
+    overflow: visible;
+}
+
+#Boundary_lo {
+    fill: transparent;
+}
+
+.Boundary_lo {
+    position: absolute;
+    overflow: visible;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+}
+
+#_Color_lp {
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+._Color_lp {
+    overflow: visible;
+    position: absolute;
+    width: 22px;
+    height: 15px;
+    left: 1px;
+    top: 4.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Forgot_password {
+    left: 229px;
+    top: 419px;
+    position: absolute;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: -2px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(18, 18, 18, 1);
+    letter-spacing: 0.3333333206176758px;
+}
+
+#Group_396 {
+    position: absolute;
+    width: 193px;
+    height: 43px;
+    left: 84px;
+    top: 450px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Create_account.html;
+    cursor: pointer;
+}
+
+#Light_Elevation00dp_ls {
+    position: absolute;
+    width: 193px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Shadow_lt {
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 193px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Rectangle_lw {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.Rectangle_lw {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.141));
+    position: absolute;
+    overflow: visible;
+    width: 208px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+
+#Rectangle_lw {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.Rectangle_lw {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.141));
+    position: absolute;
+    overflow: visible;
+    width: 208px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+
+#Rectangle_lw {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.Rectangle_lw {
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.141));
+    position: absolute;
+    overflow: visible;
+    width: 208px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+
+#_FAB_Color_lx {
+    fill: rgba(3, 218, 197, 1);
+}
+
+._FAB_Color_lx {
+    position: absolute;
+    overflow: visible;
+    width: 193px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+}
+
+#Group_339_ly {
+    position: absolute;
+    width: 193px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#State_lz {
+    position: absolute;
+    width: 193px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#__Label_l {
+    left: 64px;
+    top: 12px;
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.89px;
+    text-transform: uppercase;
+}
+
+#Dont_have_an_account_Create_ac {
+    left: 62px;
+    top: 678px;
+    position: absolute;
+    overflow: visible;
+    width: 238px;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-top: -2px;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(18, 18, 18, 1);
+    letter-spacing: 0.3333333206176758px;
+}
+
+#Rectangle_20 {
+    fill: rgba(0, 0, 0, 0.122);
+}
+
+.Rectangle_20 {
+    position: absolute;
+    overflow: visible;
+    width: 85px;
+    height: 85px;
+    left: 138px;
+    top: 80px;
+}
+
+#link {
+    position: absolute;
+    width: 49.947px;
+    height: 49.954px;
+    left: 155.525px;
+    top: 97.523px;
+    overflow: visible;
+}
+
+#Group_398 {
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 16.058px;
+    overflow: visible;
+}
+
+#Group_397 {
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Path_97 {
+    fill: rgba(112, 239, 222, 1);
+}
+
+.Path_97 {
+    overflow: visible;
+    position: absolute;
+    width: 31.448px;
+    height: 33.896px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Group_400 {
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 18.482px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Group_399 {
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Path_98 {
+    fill: rgba(14, 117, 121, 1);
+}
+
+.Path_98 {
+    overflow: visible;
+    position: absolute;
+    width: 31.465px;
+    height: 33.897px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Login {
+    left: 34px;
+    top: 224px;
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(18, 18, 18, 1);
+    letter-spacing: 0.3333333206176758px;
+}
