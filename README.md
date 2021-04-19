@@ -2,6 +2,12 @@
 ##  WorldInnovationDayHack  Apr 2021
 This repository is setup for all the project artifacts created by team during challenge.
 
+## Why We
+
+Bushfires and floods are the top two natural disasters in Australia. For several months spanning late 2019 and early 2020, bushfires devastated communities across Australia. Building community and individual resilience to lessen the extent of damage from a natural disaster are essential.
+
+We aim to build disaster awareness and preparation at the individual level and promote individual contributions to help in creating a resilient community. We are providing an app where each and everyone can register and prepare themselves for disaster and actively give them recommendations of acts of kindness they can do at their pace to build Resilient Communities.
+
 ## How this repository is setup
 
 ### appcodebase 
