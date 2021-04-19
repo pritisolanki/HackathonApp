@@ -14,9 +14,15 @@ This repository is setup for all the challenge hackathon artifacts.
     
 ## Contributing Team
 Design Members (UI/UX) -  Neeti Sharma <br/>
+
 Subject Matter Experts (SMEs) - Mari Takashima <br/>
+
 Software Engineering Members (Building solution) - Anil Kumar Sahoo, Nabeel Raza, Doshagya Kumar,Asit Kumar Panda, Priti Solanki <br/>
+
 Business Members (Business modelling, financial analysis and validation) - Aviral <br />
+
 Presenters/Media (responsible for delivery of video and presentation elements) -  Aviral + Team <br/>
+
 Project Manager (Keeps the team to schedule) - Mari Takashima <br/>
+
 Team Captain / Representative (Represents the team, acts as a final decision point when there is a conflict) - Priti Solanki <br/>
