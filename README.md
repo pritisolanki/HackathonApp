@@ -33,7 +33,7 @@ AI model improvements:
 
 ### Future plan of app:
 #### Mental health checks:
-We would like to add Post-traumatic stress disorder (PTSD) questionnaires (link) in the app for users to do one before the disaster as the baseline. The user can do this test whenever they want, and the app will track the scores longitudinally. When there is a disaster, the user can check their mental health by doing this questionnaire, and the app can notify the user if the score diverts from the past average, which recommends the user to seek professional help. We will need to collaborate with the mental health organisation and disaster management experts to reduce the potential harm and improve clinical relevance.
+We would like to add Post-traumatic stress disorder (PTSD) questionnaires in the app for users to do one before the disaster as the baseline. The user can do this test whenever they want, and the app will track the scores longitudinally. When there is a disaster, the user can check their mental health by doing this questionnaire, and the app can notify the user if the score diverts from the past average, which recommends the user to seek professional help. We will need to collaborate with the mental health organisation and disaster management experts to reduce the potential harm and improve clinical relevance.
 
 ## How this repository is setup
 
