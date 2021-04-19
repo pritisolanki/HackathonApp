@@ -1,7 +1,3 @@
-## Why is it important
-
-Collective trauma occurs when an unexpected event like this bushfire crisis comes through and damages the ties that bind our community together,” said Erin Smith, Edwith Cowan University's Associate Professor at the School of Medical and Health Science of  during a webinar on the mental health impact of the bushfires hosted by the World Association for Disaster and Emergency Medicine. “It’s those social bonds, that connectedness is so important for resilience and so important ultimately for the way that people will recover after disasters.
-
 ## Tech Stack
 
 ### Engineering Tools - Rapid Development tools used in challenge
