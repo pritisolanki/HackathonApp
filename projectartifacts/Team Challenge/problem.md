@@ -6,14 +6,14 @@ Collective trauma occurs when an unexpected event like this bushfire crisis come
 
 ### Engineering Tools
 <ul>
-    <li> Oracle Cloud Data Science : Juypter Notebook</li>
-    <li> Oracle Cloud Infrastructure </li>
-    <li> React Js </li>
-    <li> Backendless API </li>
+    <li> [Oracle Cloud Data Science Platform](https://www.oracle.com/data-science/)</li>
+    <li> [Oracle Cloud Infrastructure](https://www.oracle.com/cloud/) </li>
+    <li> [React JS](https://reactjs.org/) </li>
+    <li> [Backendless API](https://backendless.com/) </li>
 </ul>
 
 ### Research Tools
-Oracle Analytics Service : Generate Business Insights
+[Oracle Analytics Service](https://docs.oracle.com/en/cloud/paas/analytics-cloud/index.html)
 
 ### Designing Tools
 Design Thinking : [Miro Board](https://miro.com/app/board/o9J_lJ7gfeE=/) <br/>
