@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d262f87b-431e-41f3-a5f1-f2fabbff6110",
+		"name": "iconnect-RecommendationEngine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://c41fe2352ab4.ngrok.io/api/predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Amar Gupta\",\r\n    \"age\":25,\r\n    \"lat\":-33.71,\r\n    \"lng\":151.21,\r\n    \"disable\":0,\r\n    \"outdoor\":1,\r\n    \"preparation\":0,\r\n    \"community\":1,\r\n    \"local_support\":1,\r\n    \"environment\":1,\r\n    \"asset_protection\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://c41fe2352ab4.ngrok.io/api/predict",
+					"protocol": "http",
+					"host": [
+						"c41fe2352ab4",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"api",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

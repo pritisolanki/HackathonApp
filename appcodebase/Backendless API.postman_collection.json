@@ -1,0 +1,1357 @@
+{
+	"info": {
+		"_postman_id": "613470af-2cb1-41c0-8730-45c262de3f7e",
+		"name": "Backendless API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Geolocation API",
+			"item": [
+				{
+					"name": "Add Geo Point",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"GeoPoint Id\", jsonData.geopoint.objectId);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 12.21212,\n  \"longitude\": -43.3333,\n  \"categories\": [\n    \"{{Geo Category Name}}\"\n  ],\n  \"metadata\": {\n    \"foo\": \"bar\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Geo Point",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 0,\n  \"longitude\": 10,\n  \"categories\": [\n    \"my_another_geo_category\"\n  ],\n  \"metadata\": {\n    \"foo\": 123\n  }\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points/{{GeoPoint Id}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points",
+								"{{GeoPoint Id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Geo Point",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 55.21212,\n  \"longitude\": 22.3333\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points/{{GeoPoint Id}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points",
+								"{{GeoPoint Id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Geo Point",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "user-toke",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points/{{GeoPoint Id}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points",
+								"{{GeoPoint Id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Geo Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/categories/{{Geo Category Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"categories",
+								"{{Geo Category Name}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Geo Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/categories/{{Geo Category Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"categories",
+								"{{Geo Category Name}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Geo Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/categories",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Geo Points in Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points?categories={{Geo Category Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pagesize",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "categories",
+									"value": "{{Geo Category Name}}"
+								},
+								{
+									"key": "where",
+									"value": "latitude>10 and latitude<13",
+									"disabled": true
+								},
+								{
+									"key": "metadata",
+									"value": "{\"foo\":123}",
+									"disabled": true
+								},
+								{
+									"key": "includemetadata",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Geo Points in Radius",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points?lat=0&lon=0&r=10000&units=KILOMETERS",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pagesize",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "categories",
+									"value": "Default",
+									"disabled": true
+								},
+								{
+									"key": "where",
+									"value": "latitude>10 and latitude<13",
+									"disabled": true
+								},
+								{
+									"key": "metadata",
+									"value": "{\"foo\":123}",
+									"disabled": true
+								},
+								{
+									"key": "includemetadata",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "lat",
+									"value": "0"
+								},
+								{
+									"key": "lon",
+									"value": "0"
+								},
+								{
+									"key": "r",
+									"value": "10000"
+								},
+								{
+									"key": "units",
+									"value": "KILOMETERS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Geo Points in Ractangular Area",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points?nwlat=-50&nwlon=-50&selat=50&selon=50",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pagesize",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "categories",
+									"value": "Default",
+									"disabled": true
+								},
+								{
+									"key": "where",
+									"value": "latitude>10 and latitude<13",
+									"disabled": true
+								},
+								{
+									"key": "metadata",
+									"value": "{\"foo\":123}",
+									"disabled": true
+								},
+								{
+									"key": "includemetadata",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "nwlat",
+									"value": "-50"
+								},
+								{
+									"key": "nwlon",
+									"value": "-50"
+								},
+								{
+									"key": "selat",
+									"value": "50"
+								},
+								{
+									"key": "selon",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Clustered Geo Points",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points?dpp=0.01&clusterGridSize=45",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pagesize",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "categories",
+									"value": "Default",
+									"disabled": true
+								},
+								{
+									"key": "where",
+									"value": "latitude>10 and latitude<13",
+									"disabled": true
+								},
+								{
+									"key": "nwlat",
+									"value": "-50",
+									"disabled": true
+								},
+								{
+									"key": "nwlon",
+									"value": "-5",
+									"disabled": true
+								},
+								{
+									"key": "selat",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "selon",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "lat",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "lon",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "r",
+									"value": "10000",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "KILOMETERS",
+									"disabled": true
+								},
+								{
+									"key": "dpp",
+									"value": "0.01"
+								},
+								{
+									"key": "clusterGridSize",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Geo Points in Cluster",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/clusters/{{Geo Cluster ID}}/points?dpp=0.01&size=100",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"clusters",
+								"{{Geo Cluster ID}}",
+								"points"
+							],
+							"query": [
+								{
+									"key": "categories",
+									"value": "Default",
+									"disabled": true
+								},
+								{
+									"key": "pagesize",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "lat",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "lon",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "METERS",
+									"disabled": true
+								},
+								{
+									"key": "r",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "nwlat",
+									"value": "-50",
+									"disabled": true
+								},
+								{
+									"key": "nwlon",
+									"value": "-50",
+									"disabled": true
+								},
+								{
+									"key": "selat",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "selon",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "metadata",
+									"value": "{\"foo\":\"bar\"}",
+									"disabled": true
+								},
+								{
+									"key": "dpp",
+									"value": "0.01"
+								},
+								{
+									"key": "size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo Fence OnEnter Action",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 12.21212,\n  \"longitude\": -43.3333\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/fence/onenter?geoFence={{Geo Fence Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"fence",
+								"onenter"
+							],
+							"query": [
+								{
+									"key": "geoFence",
+									"value": "{{Geo Fence Name}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo Fence OnStay Action",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 12.21212,\n  \"longitude\": -43.3333\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/fence/onstay?geoFence={{Geo Fence Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"fence",
+								"onstay"
+							],
+							"query": [
+								{
+									"key": "geoFence",
+									"value": "{{Geo Fence Name}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo Fence OnExit Action",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"latitude\": 12.21212,\n  \"longitude\": -43.3333\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/fence/onexit?geoFence={{Geo Fence Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"fence",
+								"onexit"
+							],
+							"query": [
+								{
+									"key": "geoFence",
+									"value": "{{Geo Fence Name}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Geo Points from Geo Fence",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/points?geoFence={{Geo Fence Name}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"points"
+							],
+							"query": [
+								{
+									"key": "geoFence",
+									"value": "{{Geo Fence Name}}"
+								},
+								{
+									"key": "pagesize",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "includemetadata",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Geo Points Count",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/geo/count",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"geo",
+								"count"
+							],
+							"query": [
+								{
+									"key": "categories",
+									"value": "Default",
+									"disabled": true
+								},
+								{
+									"key": "lat",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "lon",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "METERS",
+									"disabled": true
+								},
+								{
+									"key": "r",
+									"value": "100",
+									"disabled": true
+								},
+								{
+									"key": "nwlat",
+									"value": "-50",
+									"disabled": true
+								},
+								{
+									"key": "nwlon",
+									"value": "-50",
+									"disabled": true
+								},
+								{
+									"key": "selat",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "selon",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "metadata",
+									"value": "{\"foo\":\"bar\"}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Service API",
+			"item": [
+				{
+					"name": "User Schema",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/userclassprops",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"userclassprops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Roles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}"
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/userroles",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"userroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Registration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"{{User Identity}}\",\n  \"password\": \"{{User Password}}\",\n  \"name\": \"Bob\"\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/register",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"register"
+							]
+						},
+						"description": "Registers a user in the application"
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"Current User ID\", jsonData[\"objectId\"]);",
+									"postman.setEnvironmentVariable(\"Current User Token\", jsonData[\"user-token\"]);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"login\":\"{{User Identity}}\",\n  \"password\":\"{{User Password}}\"\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/login",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"login"
+							]
+						},
+						"description": "Registers a user in the application"
+					},
+					"response": []
+				},
+				{
+					"name": "User Guest Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"postman.setEnvironmentVariable(\"Current User ID\", jsonData[\"objectId\"]);",
+									"postman.setEnvironmentVariable(\"Current User Token\", jsonData[\"user-token\"]);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/register/guest",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"register",
+								"guest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login With Facebook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"accessToken\" : \"facebookLoginToken\",\n \"fieldsMapping\" :\n  {\n     \"first_name\" : \"FirstName\",\n     \"last_name\" : \"LastName\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/social/facebook/sdk/login",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"social",
+								"facebook",
+								"sdk",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login With Twitter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"fieldsMapping\" : {\n     \"userId\" : \"UserID\",\n     \"screenName\" : \"ScreenName\"\n  },\n \"redirect\" : true\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/social/oauth/twitter/request_url",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"social",
+								"oauth",
+								"twitter",
+								"request_url"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"postman.clearEnvironmentVariable(\"Current User ID\");",
+									"",
+									"postman.clearEnvironmentVariable(\"Current User Token\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/logout",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"logout"
+							]
+						},
+						"description": "Registers a user in the application"
+					},
+					"response": []
+				},
+				{
+					"name": "User Token Is Valid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/isvalidusertoken/{{Current User Token}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"isvalidusertoken",
+								"{{Current User Token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Properies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/{{Current User ID}}?props=email,name",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"{{Current User ID}}"
+							],
+							"query": [
+								{
+									"key": "props",
+									"value": "email,name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Properies",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-token",
+								"value": "{{Current User Token}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\" : \"Jerry\",\n \"age\" : 32\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/{{Current User ID}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"{{Current User ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset User Password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/users/restorepassword/{{User Identity}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"users",
+								"restorepassword",
+								"{{User Identity}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User-to-Geo Relations",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"location\":{\n  \"___class\":\"GeoPoint\", \n  \"latitude\":48.85,\n  \"longitude\":2.35\n  }\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{REST API Key}}/data/Users/{{Current User ID}}",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{REST API Key}}",
+								"data",
+								"Users",
+								"{{Current User ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Role to User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"user\" : \"developer@backendless.com\",\n \"roleName\" : \"roleName-value\"\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{Code Runner API key}}/users/assignRole",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{Code Runner API key}}",
+								"users",
+								"assignRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unassign Role from User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"user\" : \"developer@backendless.com\",\n \"roleName\" : \"roleName-value\"\n}"
+						},
+						"url": {
+							"raw": "{{API Host}}/{{Application ID}}/{{Code Runner API key}}/users/unassignRole",
+							"host": [
+								"{{API Host}}"
+							],
+							"path": [
+								"{{Application ID}}",
+								"{{Code Runner API key}}",
+								"users",
+								"unassignRole"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Contains user service API requests such as user registration, user login, logout, user update"
+		}
+	]
+}
