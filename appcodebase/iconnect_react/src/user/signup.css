@@ -51,7 +51,7 @@
 
 #_Container_l_Color_me {
     fill: transparent;
-    stroke: rgba(3, 218, 197, 1);
+    stroke: rgba(#007579);
     stroke-width: 2px;
     stroke-linejoin: miter;
     stroke-linecap: butt;
@@ -309,6 +309,8 @@
     left: 0px;
     top: 0px;
     overflow: visible;cursor: pointer;
+    background-color: #007579;
+    border-radius: 1.5em;
 }
 
 #State_my {

@@ -239,7 +239,7 @@ const Signin = () => {
           </svg>
           <div id="Group_339_ly">
             <div id="__Label_l">
-              <span>Sign in</span>
+              <span style={{fontFamily:'Helvetica Neue'}}>Sign in</span>
             </div>
           </div>
         </div>

@@ -399,6 +399,8 @@
     left: 0px;
     top: 0px;
     overflow: visible;
+    background-color: #007579;
+    border-radius: 1.5em;
 }
 
 #State_lz {
