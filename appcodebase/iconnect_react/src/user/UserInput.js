@@ -48,9 +48,9 @@ const UserInput = () => {
   return (
     <div>
       {/* {!start && ( */}
-      <div className="welcomeFont" >Welcome to IConnect</div>
+      <div className="welcomeFont" >Welcome to iConnect</div>
       <div className="beTogetherImgDiv">
-        <img width="100" height="100" src={BeTogether} alt="LOGO" style={{ margin: "100px" }} />
+        <img width="150" height="150" src={BeTogether} alt="LOGO" style={{ margin: "100px" }} />
       </div>
       <div className="smallStepsFont">Small steps to big change</div>
       <div className="joinUsFont">Join us for a cause personalised for you</div> 
