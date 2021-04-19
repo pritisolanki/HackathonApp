@@ -3,6 +3,7 @@
 
 This repository is setup for all the challenge hackathon artifacts.
 
+## Problem Statement
 
 Bushfires and floods are the top two natural disasters in Australia. Geographically, bushfires occur mainly in south-eastern Australia, whereas floodsoccur mainly on the eastern coastline. According to the historical disaster data, houses destroyed were higher by disasters from bushfires compared to floods. Inthe years between 1967 and 2013, bushfires cost approximately A$4.7 billion, including deaths and injuries but excluding most indirect losses (link). Royal Commission into National Natural Disaster Arrangements had an inquiry that Australia is not well-prepared for natural disasters.  For several months spanning late 2019 and early 2020, bushfires devastated communities across Australia. One of the most brutal fire seasons in recent memory saw thousands of acres of property burnt, homes destroyed, and lives lost. (link). Post-traumatic stress disorder (PTSD) is the most commonly seen after natural disasters. Approximately 30-40% among direct victims, 10-20% among rescue workers, and 5-10% among the general population experienced PTSD after a natural disaster (link). 
 
