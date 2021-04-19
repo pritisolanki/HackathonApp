@@ -1,0 +1,59 @@
+.welcomeFont{
+   font-size: 24px;
+   font-weight: bold;
+   font-family: "HelveticaNeue-CondensedBold Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-align: center; 
+   color: #292929;
+   margin-top: 2em;
+}
+
+.smallStepsFont{
+    font-size: 16px;
+    font-family: "HelveticaNeue-CondensedBold Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #292929;
+  
+}
+
+.joinUsFont{
+    font-size: 12px;
+    font-family: "HelveticaNeue-CondensedBold Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 2em;
+
+}
+
+.getStartedBtn{
+    color: white;
+    background-color: #007579;
+    border-radius: 2em;
+    font-family:"roboto";
+}
+
+.btnDiv{
+    text-align: center;
+    margin-bottom:2em;
+}
+
+.haveAccSpan{
+    font-family:"roboto";
+    color: #292929;
+    
+}
+
+.haveAccFont{
+    text-align: center;
+}
+
+.beTogetherImgDiv{
+    text-align: center;
+}
+
+.accountLink{
+    cursor: pointer;
+}
+
+.getStartedBtn:hover{
+    color:white;
+}

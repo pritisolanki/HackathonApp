@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "./homePage.css";
+import BeTogether from "../assets/images/help.png";
+
 
 const UserInput = () => {
   const history = useHistory();
@@ -45,15 +48,17 @@ const UserInput = () => {
   return (
     <div>
       {/* {!start && ( */}
-      <div>
-        <h4>Welcome to iConnect</h4>
-        <p>Small steps to big change</p>
-        <p>Join us for a cause personalised for you</p>
-        <button onClick={() => history.push("/signup")}>GET STARTED</button>
-        <p>
-          I have an <u onClick={() => history.push("/signin")}>Account</u>
-        </p>
+      <div className="welcomeFont" >Welcome to IConnect</div>
+      <div className="beTogetherImgDiv">
+        <img width="100" height="100" src={BeTogether} alt="LOGO" style={{ margin: "100px" }} />
       </div>
+      <div className="smallStepsFont">Small steps to big change</div>
+      <div className="joinUsFont">Join us for a cause personalised for you</div> 
+
+      <div className="btnDiv"><button type = "button" onClick={() => history.push("/signup")} className="btn	
+.btn-sm getStartedBtn">GET STARTED</button></div>
+      <div className="haveAccFont"><span className="haveAccSpan">I have an <span className="accountLink"><u onClick={() => history.push("/signin")} >Account</u></span></span></div>
+      
       {/* )} */}
       {/* {start && gender === null && (
         <div>
