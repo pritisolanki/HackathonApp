@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can run this project on your local environment by going to the project directory and then running 'npm start' command
+
+
 ## Available Scripts
 
 In the project directory, you can run:
