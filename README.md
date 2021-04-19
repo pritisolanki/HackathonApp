@@ -14,7 +14,7 @@ This repository is setup for all the project artifacts created by team during ch
     This folder contains all artifacts developed during team collaboration.
     
 ## Team Apollo 
-### Building resilience communties through act of seelf-awareness and kindness
+### Building resilience communties through act of self-awareness and kindness
 
 Design Members (UI/UX) -  Neeti Sharma <br/>
 
