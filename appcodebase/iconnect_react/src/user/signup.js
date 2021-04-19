@@ -29,6 +29,7 @@ const Signup = () => {
       .then(function (registeredUser) {
         console.log(registeredUser);
         alert("Registration successfull & Confirmation mail sent");
+        history.push("/signin");
       })
       .catch(function (error) {
         console.log(error);
@@ -317,7 +318,12 @@ const Signup = () => {
             srcset="State_my.png 1x, State_my@2x.png 2x"
           ></svg> */}
             <div id="__Label_mz">
-              <span style={{fontFamily:'Helvetica Neue'}} onClick={handleSignup}>Sign Up</span>
+              <span
+                style={{ fontFamily: "Helvetica Neue" }}
+                onClick={handleSignup}
+              >
+                Sign Up
+              </span>
             </div>
           </div>
         </div>
