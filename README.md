@@ -1,5 +1,5 @@
 
-##  WorldInnovationDayHack 2021 Apr 2021
+##  WorldInnovationDayHack  Apr 2021
 This repository is setup for all the project artifacts created by team during challenge.
 
 ## How this repository is setup
