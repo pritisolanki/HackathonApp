@@ -1,8 +1,8 @@
 
-##  WorldInnovationDayHack  Apr 2021
-This repository is setup for all the project artifacts created by team during challenge.
+## WorldHackathon Day Apr 2021
 
-## Why We
+This repository is setup for all the challenge hackathon artifacts.
+
 
 Bushfires and floods are the top two natural disasters in Australia. For several months spanning late 2019 and early 2020, bushfires devastated communities across Australia. Building community and individual resilience to lessen the extent of damage from a natural disaster are essential.
 
@@ -10,14 +10,23 @@ We aim to build disaster awareness and preparation at the individual level and p
 
 ## How this repository is setup
 
-### appcodebase 
+### appcodebase
+
     This folder contains a bare minimum working app for iConnect
+    You can run this project on your local environment by going to the project directory and then running 'npm start' command
 
 ### datascience
+
     This folder contains scripts and model which team developed during challenge
 
 ### projectartifacts
+
     This folder contains all artifacts developed during team collaboration.
+
+
+## Contributing Team
+
+Priti Solanki, Neeti Sharma, Anil Kumar Sahoo, Nabeel Raza, Doshagya, Asit Kumar Panda, Mari Takashima, Aviral Pandey
     
 ## Team Apollo 
 ### Challenge Category : Health and Wellbeing
