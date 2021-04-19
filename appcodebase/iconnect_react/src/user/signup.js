@@ -317,7 +317,7 @@ const Signup = () => {
             srcset="State_my.png 1x, State_my@2x.png 2x"
           ></svg> */}
             <div id="__Label_mz">
-              <span onClick={handleSignup}>Sign Up</span>
+              <span style={{fontFamily:'Helvetica Neue'}} onClick={handleSignup}>Sign Up</span>
             </div>
           </div>
         </div>
