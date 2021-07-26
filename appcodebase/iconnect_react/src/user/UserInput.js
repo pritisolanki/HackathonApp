@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import "./homePage.css";
 import BeTogether from "../assets/images/help.png";
 
-
 const UserInput = () => {
   const history = useHistory();
 
@@ -23,44 +22,68 @@ const UserInput = () => {
   const handleStart = () => {
     setstart(true);
   };
-  // const handleGender = (event) => {
-  //   setGender(event.value);
-  // };
-  // const handleAge = (event) => {
-  //   setAge(event.value);
-  // };
-  // const handleLevel = (event) => {
-  //   setOutdoor(event.value);
-  //   setVoluntering(event.value);
-  // };
-  // const handleBackGender = () => {
-  //   if (start === true) setstart(false);
-  //   // if (gender !== null) setGender(null);
-  // };
-  // const handleBackAge = () => {
-  //   //   if (start === true) setstart(false);
-  //   if (gender !== null) setGender(null);
-  // };
-  // const handleBackLevel = () => {
-  //   //   if (start === true) setstart(false);
-  //   if (age !== null) setAge(null);
-  // };
+  const handleGender = (event) => {
+    setGender(event.value);
+  };
+  const handleAge = (event) => {
+    setAge(event.value);
+  };
+  const handleLevel = (event) => {
+    setOutdoor(event.value);
+    setVoluntering(event.value);
+  };
+  const handleBackGender = () => {
+    if (start === true) setstart(false);
+    // if (gender !== null) setGender(null);
+  };
+  const handleBackAge = () => {
+    //   if (start === true) setstart(false);
+    if (gender !== null) setGender(null);
+  };
+  const handleBackLevel = () => {
+    //   if (start === true) setstart(false);
+    if (age !== null) setAge(null);
+  };
   return (
     <div>
-      {/* {!start && ( */}
-      <div className="welcomeFont" >Welcome to iConnect</div>
-      <div className="beTogetherImgDiv">
-        <img width="150" height="150" src={BeTogether} alt="LOGO" style={{ margin: "100px" }} />
-      </div>
-      <div className="smallStepsFont">Small steps to big change</div>
-      <div className="joinUsFont">Join us for a cause personalised for you</div> 
+      {!start && (
+        <div>
+          <div className="welcomeFont">Welcome to iConnect</div>
+          <div className="beTogetherImgDiv">
+            <img
+              width="150"
+              height="150"
+              src={BeTogether}
+              alt="LOGO"
+              style={{ margin: "100px" }}
+            />
+          </div>
+          <div className="smallStepsFont">Small steps to big change</div>
+          <div className="joinUsFont">
+            Join us for a cause personalised for you
+          </div>
 
-      <div className="btnDiv"><button type = "button" onClick={() => history.push("/signup")} className="btn	
-.btn-sm getStartedBtn">GET STARTED</button></div>
-      <div className="haveAccFont"><span className="haveAccSpan">I have an <span className="accountLink"><u onClick={() => history.push("/signin")} >Account</u></span></span></div>
-      
-      {/* )} */}
-      {/* {start && gender === null && (
+          <div className="btnDiv">
+            <button
+              type="button"
+              onClick={handleStart}
+              className="btn	
+.btn-sm getStartedBtn"
+            >
+              GET STARTED
+            </button>
+          </div>
+          <div className="haveAccFont">
+            <span className="haveAccSpan">
+              I have an{" "}
+              <span className="accountLink">
+                <u onClick={() => history.push("/signin")}>Account</u>
+              </span>
+            </span>
+          </div>
+        </div>
+      )}
+      {start && gender === null && (
         <div>
           <button onClick={handleBackGender}>Back</button>
           <h4>Let us know more about yourself?</h4>
@@ -119,7 +142,7 @@ const UserInput = () => {
           <label>Experienced</label>
           <button onClick={handleLevel}>Continue</button>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
